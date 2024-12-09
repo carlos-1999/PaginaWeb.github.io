@@ -1,0 +1,461 @@
+body{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 200px 500px 100px;
+    background-color: pink;
+
+}
+
+header{
+    grid-column: 1/3;
+    grid-row: 1/1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('..\IMG\cabecera_IesCanarias.jpg') ;
+    justify-content: center;
+    background-size: cover; 
+    position: relative;
+    object-fit: cover;
+    top:0;
+    left:0;
+    background-color: white;
+    
+ 
+}
+
+nav ul li:hover {
+    background-color: orange;
+}
+
+nav {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #f7f1f1;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 1px;
+    position: relative;
+    width: 100%;
+   
+ 
+}
+
+nav ul{
+    background-color: #f7f1f1;
+    list-style: none;
+    padding: 0;
+    margin:4%;
+    text-align: center;
+    
+}
+
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li {
+    border: 1px solid #ccc;
+}
+
+nav p {
+    margin-top: 30px;
+}
+
+section h2 {
+    text-align: left;  
+    position: relative; 
+    top: -100px;  
+    left: -110px;
+    margin: 0; 
+    padding: 10px; 
+}
+
+.navegación a {
+    text-decoration: none; 
+    display: block; 
+    padding: 10px 15px; 
+    color: black; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+    text-align: center; 
+    border: 10px;
+}
+
+.navegación a.active {
+    background-color: orange; 
+    color: white;
+}
+
+
+
+
+section{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: orange;
+    text-align: center;
+    list-style: none;
+    padding: 110px;
+    margin: 1px;
+    overflow: auto;
+    word-wrap: break-word;  
+}
+
+section h2 {
+    word-wrap: break-word; 
+    max-width: 55%; 
+}
+
+section h1 {
+    text-align: center;  
+    position: relative; 
+    top: -100px;  
+    left: -110px;
+    margin: 0; 
+    padding: 10px; 
+}
+
+section {
+   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;      
+}
+
+
+
+
+.tabla td {
+    word-break: break-word; 
+    padding: 10px; 
+    max-width: 20%;
+}
+
+/* Desplazar cada fila individualmente */
+.tabla tr:nth-child(1) td:last-child {
+    padding-left: 190px; /* Para la fila 1 */
+}
+
+.tabla tr:nth-child(2) td:last-child {
+    padding-left: 190px; /* Para la fila 2 */
+}
+
+.tabla tr:nth-child(3) td:last-child {
+    padding-left: 190px; /* Para la fila 3 */
+}
+
+.tabla tr:nth-child(4) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(5) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(6) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(7) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(8) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(9) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(10) td:last-child {
+    padding-left: 190px;
+}
+
+.tabla tr:nth-child(11) td:last-child {
+    padding-left: 190px; 
+}
+
+.tabla tr:nth-child(12) td:last-child {
+    padding-left: 190px;
+}
+
+.tabla tr:nth-child(13) td:last-child {
+    padding-left: 190px;
+}
+
+.tabla {
+    border-spacing: 300px; 
+}
+
+
+
+.info-table {
+    margin: 0 auto;
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.info-table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+}
+
+.info-table td {
+    padding: 8px 15px; 
+
+}
+
+.info-table td:first-child {
+    text-align: right; 
+    font-weight: bold; 
+    white-space: nowrap; 
+}
+
+.info-table td:last-child {
+    text-align: left; 
+}
+
+.tabla {
+    margin: 0 auto;
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.tabla {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    font-size: 14px; 
+}
+
+.tabla td {
+    padding: 25px 15px; 
+
+}
+
+.tabla td:first-child {
+    text-align: right; 
+    font-weight: bold; 
+    white-space: nowrap;
+    word-break: break-word;
+    max-width:-70%;
+}
+
+.tabla td:last-child {
+    text-align: left; 
+}
+
+
+
+
+
+
+footer{
+    grid-column: 1/3;
+    grid-row: 3/3;
+    background-color: yellow;
+    padding: 2px;
+    height: 20px;
+
+}
+
+footer {
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 0; /* Opcional: asegura que no haya relleno no deseado */
+    border: none; /* Asegúrate de que no haya bordes visibles */
+}
+
+
+.izquierda{
+padding: 4px;
+text-align: left;
+line-height: 0;
+
+}
+
+.derecha{
+text-align: right;
+line-height: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.formulario-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7bc56;
+    border: 2px solid #d0a03d;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+   
+    gap: 15px;
+    grid-template-areas:
+    "nombre apellidos sexo"
+    "fecha fecha fecha"
+    "titulo titulo titulo"
+    "modulos modulos modulos"
+    "comentarios comentarios comentarios"
+    "botones botones botones";
+}
+
+.fila {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fila label {
+    text-align: right;
+    min-width: 100px;
+}
+
+label {
+    min-width: 150px;
+    text-align: right;
+}
+
+input[type="text"],
+input[type="date"] {
+    flex: 1;
+    padding: 5px;
+}
+
+input[type="date"] {
+    width: 200px; 
+    padding: 5px;
+}
+
+.modulos {
+    grid-area: modulos;
+}
+
+.modulos p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    margin: 10px 0; 
+}
+
+textarea {
+    grid-area: comentarios;
+    padding: 10px;
+    resize: none;
+    
+}
+
+.botones {
+    grid-area: botones;
+    display: flex;
+    
+  
+   
+}
+
+.botones p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.botones button {
+    width: 100px;
+    padding: 10px;
+    margin: 5px; 
+   
+    border: none;
+   
+    cursor: pointer;
+}
+
+
+textarea {
+    width: 90%; 
+    margin: 0 auto;
+    padding: 10px;
+    resize: none;
+}
+
+.contenido-poema h2 {
+    text-align: center;  
+    position: relative; 
+    top: 35px;  
+    left: -5px;
+    margin: 0; 
+    padding: 10px; 
+    font-size: 24px; 
+    color: #000; 
+}
+
+.contenido-poema p {
+    font-size: 18px;
+    text-align: center; 
+    
+}
+
+.contenido-poema p:last-child {
+    text-align: center; 
+    font-style: italic; 
+}
+
+.iframe-contenedor {
+    padding: 20px; 
+    margin: 20px auto; 
+    border: 2px solid #d0a03d; 
+    width: 90%; 
+    text-align: center; 
+    font-family: Arial, sans-serif;
+}
+
+.iframe-contenedor h2 {
+    margin-bottom: 10px; 
+    font-size: 24px; 
+    color: #000; 
+}
+
+.iframe-contenedor p {
+    margin-bottom: 15px; 
+   
+    color: #333; 
+}
+
+
+
+
+
